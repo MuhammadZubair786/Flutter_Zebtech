@@ -79,53 +79,104 @@ void main() {
   //Fail => Chance Check
   // 0 chance =>
 
-  var i = "y";
-  int chance = 3;
-  int point = 0;
-  while (i == "y") {
-   stdout.write("Enter Number :");
-    int user = int.parse(stdin.readLineSync()!);
-     int b = Random().nextInt(10);
-   print(b);
+  // var i = "y";
+  // int chance = 3;
+  // int point = 0;
+  // while (i == "y") {
+  //   int b = Random().nextInt(10);
+  //   print(b);
+  //   stdout.write("Enter Number :");
+  //   int user = int.parse(stdin.readLineSync()!);
 
-    if (chance == 3) {
-      if (b == user) {
-        point += 10;
-        print("Chance : $chance");
-        print("Point  : $point");
-      } else {
-        chance--;
-        print("Chance : $chance");
-        print("Point  : $point");
-      }
-    } else if (chance == 2) {
-      if (b == user) {
-        point += 5;
-        chance++;
-        print("Chance : $chance");
-        print("Point  : $point");
-        
-      } else {
-        chance--;
-        print("Chance : $chance");
-        print("Point  : $point");
-      }
-    } else if (chance == 1) {
-      if (b == user) {
-        point += 2;
-        chance++;
-        print("Chance : $chance");
-        print("Point  : $point");
-      } else {
-        chance--;
-        print("Chance : $chance");
-        print("Point  : $point");
-        if(chance==0){
-         i="N";
-        }
-      }
+  //   if (chance == 3) {
+  //     if (b == user) {
+  //       point += 50;
+
+  //       print("Chance : $chance");
+  //       print("Point  : $point");
+  //       if (point >= 100) {
+  //         print("You WIN GAME And Exit");
+  //         i = "Y";
+  //       }
+  //     } else {
+  //       chance--;
+  //       print("Chance : $chance");
+  //       print("Point  : $point");
+  //     }
+  //   } else if (chance == 2) {
+  //     if (b == user) {
+  //       point += 20;
+  //       chance++;
+
+  //       print("Chance : $chance");
+  //       print("Point  : $point");
+  //       if (point >= 100) {
+  //         print("You WIN GAME And Exit");
+  //         i = "Y";
+  //       }
+  //     } else {
+  //       chance--;
+  //       print("Chance : $chance");
+  //       print("Point  : $point");
+  //     }
+  //   } else if (chance == 1) {
+  //     if (b == user) {
+  //       point += 20;
+  //       chance++;
+
+  //       print("Chance : $chance");
+  //       print("Point  : $point");
+  //       if (point >= 100) {
+  //         print("You WIN GAME And Exit");
+  //         i = "Y";
+  //       }
+  //     } else {
+  //       chance--;
+  //       print("Chance : $chance");
+  //       print("Point  : $point");
+
+  //       if (chance == 0) {
+  //         i = "N";
+  //       }
+  //     }
+  //   }
+  // }
+
+  // for(var i=0;i<=5;i++){
+  //   for(var i=1;i>0;i--){
+  //     stdout.write("*");
+
+  //   }
+  //   for(var j=i;j<=5;j++){
+  //     stdout.write(" ");
+  //   }
+  //   for(var i=1;i>0;i--){
+  //     stdout.write("*");
+
+  //   }
+  //   print("");
+  // }
+  // for(var i=5;i>=0;i--){
+  //   for(var i=1;i>0;i--){
+  //     stdout.write("*");
+
+  //   }
+  //   for(var j=5;j>=i;j--){
+  //     stdout.write(" ");
+  //   }
+  //   for(var i=1;i>0;i--){
+  //     stdout.write("*");
+
+  //   }
+  //   print("");
+  // }
+
+  List a=[[1,3,4],[1,4,5,6],[67,8],[12,34,56,78,78,90,34,89,89]];
+  // print(a[1].length);
+  for(var i=0;i<a.length;i++){
+    for(var j =0;j<a[i].length;j++){
+      print("Element Index $i in $j ${a[i][j]}");
     }
-   
-    
   }
-}
+
+}          
