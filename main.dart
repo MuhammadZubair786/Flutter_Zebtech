@@ -6,6 +6,8 @@ void main() {
 // key,value
   // var a1 = {1:"sjjs", 2: "Omer", 3: "Baber", 4: "Usman"};
   // asad ;las
+  var a = ['omer', 'asad', 'ali',"data"];
+print(cities.firstWhere((c) => c.length < 5));
   // print(a1.runtimeType);
   // print(a1.keys.toList());
   // print(a1.values);
