@@ -1,0 +1,8 @@
+user account
+user name
+amount = 0 , user =12000
+Deposit  
+Withdraw 
+detail name balance
+exit
+
