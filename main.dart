@@ -1,10 +1,15 @@
 import 'dart:async';
 
 class Car {
+
+// fb=>static (database not)
+// google,fb=> dynaimc (database)
+ 
   String color = "red"; //instance Member
   String wheel = "4";
 
- List PrintData() {
+  PrintData() {
+  
   return [1,2,3,4,5];
   }
 
@@ -14,6 +19,7 @@ class Car {
 }
 
 void main() {
+ 
   Car a = Car();
   print(a.color);
   // print(a.wheel);
